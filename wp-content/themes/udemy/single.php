@@ -195,12 +195,20 @@
                 </div>
 
               </div>
-                   <?php comments_template(); ?> 
-              <!-- Comments
-                            ============================================= -->
-           
+                   <?php 
+                    if('comments_open' || get_comments_number() ){ 
+                   comments_template();
+                               
+                     }  
 
-            </div>
+                    ?>
+                   </div> 
+                  
+                  <?php  
+                
+                  ?>
+ 
+          
 
           </div><!-- .postcontent end -->
 
