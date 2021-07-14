@@ -1,7 +1,6 @@
       <?php 
 
-      if(post_password_required() )
-      {
+      if(post_password_required() ){
         return;
 
       }
@@ -19,8 +18,8 @@
                 <!-- Comments List
                                 ============================================= -->
                 <ol class="commentlist clearfix">
+                    
                     <?php 
-
                     foreach( $comments as $comment)
                     {  ?>
                                      <li class="comment even thread-even depth-1" id="li-comment-3">
@@ -81,8 +80,7 @@
                 <div id="respond" class="clearfix">
                    
                    <?php
-                     comment_form([
-                      'comment_field'  => '<div class="clear"></div>
+                     comment_form(['comment_field'  => '<div class="clear"></div>
 
                     <div class="col_full">
                       <label>Comment</label>
@@ -110,8 +108,11 @@
                     ]);
                    ?>
 
-                  </form>
 
                 </div><!-- #respond end -->
 
               </div><!-- #comments end -->
+
+
+
+             
